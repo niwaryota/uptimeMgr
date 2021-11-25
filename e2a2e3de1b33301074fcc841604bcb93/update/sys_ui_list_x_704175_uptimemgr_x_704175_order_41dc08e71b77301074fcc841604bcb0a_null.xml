@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="x_704175_uptimemgr_x_704175_order" relationship="41dc08e71b77301074fcc841604bcb0a" sys_domain="global" table="x_704175_uptimemgr_x_704175_attendancdetail" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>targetdate</element>
+            <list_id display_value="x_704175_uptimemgr_x_704175_attendancdetail" element="NULL" name="x_704175_uptimemgr_x_704175_attendancdetail" parent="x_704175_uptimemgr_x_704175_order" relationship="41dc08e71b77301074fcc841604bcb0a" sys_domain="global" view="Default view">056df5411b44011074fcc841604bcba5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-11-24 07:24:50</sys_created_on>
+            <sys_id>dd6df5411b44011074fcc841604bcba5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-11-24 07:24:50</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_704175_uptimemgr_x_704175_attendancdetail" element="NULL" name="x_704175_uptimemgr_x_704175_attendancdetail" parent="x_704175_uptimemgr_x_704175_order" relationship="41dc08e71b77301074fcc841604bcb0a" sys_domain="global" view="Default view">056df5411b44011074fcc841604bcba5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-11-24 07:24:50</sys_created_on>
+            <sys_id>516df5411b44011074fcc841604bcba6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-11-24 07:24:50</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assignuptime</element>
+            <list_id display_value="x_704175_uptimemgr_x_704175_attendancdetail" element="NULL" name="x_704175_uptimemgr_x_704175_attendancdetail" parent="x_704175_uptimemgr_x_704175_order" relationship="41dc08e71b77301074fcc841604bcb0a" sys_domain="global" view="Default view">056df5411b44011074fcc841604bcba5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-11-24 07:24:50</sys_created_on>
+            <sys_id>d16df5411b44011074fcc841604bcba6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-11-24 07:24:50</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assignbudget</element>
+            <list_id display_value="x_704175_uptimemgr_x_704175_attendancdetail" element="NULL" name="x_704175_uptimemgr_x_704175_attendancdetail" parent="x_704175_uptimemgr_x_704175_order" relationship="41dc08e71b77301074fcc841604bcb0a" sys_domain="global" view="Default view">056df5411b44011074fcc841604bcba5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-11-24 07:24:50</sys_created_on>
+            <sys_id>556df5411b44011074fcc841604bcba6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-11-24 07:24:50</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>comment</element>
+            <list_id display_value="x_704175_uptimemgr_x_704175_attendancdetail" element="NULL" name="x_704175_uptimemgr_x_704175_attendancdetail" parent="x_704175_uptimemgr_x_704175_order" relationship="41dc08e71b77301074fcc841604bcb0a" sys_domain="global" view="Default view">056df5411b44011074fcc841604bcba5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-11-24 07:24:50</sys_created_on>
+            <sys_id>d56df5411b44011074fcc841604bcba6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-11-24 07:24:50</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_704175_uptimemgr_x_704175_attendancdetail</name>
+            <parent>x_704175_uptimemgr_x_704175_order</parent>
+            <position/>
+            <relationship display_value="オーダ確認">41dc08e71b77301074fcc841604bcb0a</relationship>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-11-24 07:24:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>056df5411b44011074fcc841604bcba5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_704175_uptimemgr_x_704175_attendancdetail</sys_name>
+            <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+            <sys_update_name>sys_ui_list_x_704175_uptimemgr_x_704175_order_41dc08e71b77301074fcc841604bcb0a_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-11-24 07:24:50</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

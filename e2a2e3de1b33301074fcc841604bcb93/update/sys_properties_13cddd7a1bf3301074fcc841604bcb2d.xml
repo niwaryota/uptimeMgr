@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_704175_uptimemgr.稼働入力依頼日</name>
+        <read_roles>x_704175_uptimemgr._user,x_704175_uptimemgr.manager</read_roles>
+        <suffix>稼働入力依頼日</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:23:06</sys_created_on>
+        <sys_id>13cddd7a1bf3301074fcc841604bcb2d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_704175_uptimemgr.稼働入力依頼日</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_properties_13cddd7a1bf3301074fcc841604bcb2d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:45:30</sys_updated_on>
+        <type>integer</type>
+        <value>25</value>
+        <write_roles>x_704175_uptimemgr.manager</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=13cddd7a1bf3301074fcc841604bcb2d"/>
+</record_update>

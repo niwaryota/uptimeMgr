@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="directuptime" label="直接稼働時間" language="en" table="x_704175_uptimemgr_x_704175_attendanc">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>directuptime</element>
+            <help/>
+            <hint/>
+            <label>直接稼働時間</label>
+            <language>en</language>
+            <name>x_704175_uptimemgr_x_704175_attendanc</name>
+            <plural>直接稼働時間s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-11-16 02:32:23</sys_created_on>
+            <sys_id>57bd23da1b73301074fcc841604bcbb2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>直接稼働時間</sys_name>
+            <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+            <sys_update_name>sys_documentation_x_704175_uptimemgr_x_704175_attendanc_directuptime_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-11-16 02:32:23</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

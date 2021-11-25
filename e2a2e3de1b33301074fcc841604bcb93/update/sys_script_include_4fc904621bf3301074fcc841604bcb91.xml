@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_704175_uptimemgr.Utils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Utils</name>
+        <script><![CDATA[var Utils = Class.create();
+Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+   
+	//sysid取得
+	getusersysid: function() {
+		var result;
+		var sysuser = new GlideRecord('x_704175_uptimemgr_x_704175_user');
+		sysuser.addQuery('name',gs.getUserID());
+		sysuser.query();
+		if(sysuser.next()){
+			result = sysuser.sys_id+ ','+sysuser.name.name;
+		}
+		return result;		
+	},
+	
+	//対象年月
+	gettargetdate: function() {
+		var rightnow = new GlideDate();
+		var strrightnow = rightnow.getByFormat('yyyy/MM');
+		var tblworkday = new GlideRecord('x_704175_uptimemgr_x_704175_workday');
+		var result;
+		tblworkday.addQuery('targetdate',strrightnow);
+		tblworkday.query();
+		if (tblworkday.next()){
+			result = tblworkday.sys_id+','+strrightnow;
+		}
+		return result;
+	},
+	
+	//
+	getworkdayFromWorkingday: function(){
+		var rightnow = new GlideDateTime();
+		var targetdate = this.getParameter('sysparm_flag');
+		if(targetdate == 'before'){
+			rightnow.addMonthsLocalTime(-1);
+		}
+		var strtargetdate = rightnow.getYearLocalTime()+"/"+rightnow.getMonthLocalTime();
+		var workday_lookup = new GlideRecord('x_704175_uptimemgr_x_704175_workday');
+		workday_lookup.addQuery('targetdate','=',strtargetdate);
+		workday_lookup.query();		
+		var result = "";
+		while(workday_lookup.next()){
+			result = workday_lookup.workday;
+		}
+		return result;		
+	},
+	
+	//
+	getworkingdateFromAttendanc: function(){
+			
+		//前月取得
+		var gdt = new GlideDateTime();
+		gdt.addMonthsLocalTime(-1);
+		var strtargetdate = gdt.getYearLocalTime()+"/"+gdt.getMonthLocalTime();
+		
+		var username = this.getParameter('sysparm_username');
+		var flag = this.getParameter('sysparm_flag');
+		//
+		var result;
+		var attendanc_lookup = new GlideRecord('x_704175_uptimemgr_x_704175_attendanc');
+		attendanc_lookup.addQuery('name.name',username);
+		attendanc_lookup.addQuery('targetdate.targetdate',strtargetdate);
+		attendanc_lookup.query();
+		if(attendanc_lookup.next()){
+			if(flag=='day'){
+				result = attendanc_lookup.workingdate;
+			}else{
+				result = attendanc_lookup.workingtime;
+			}
+		}
+		return result;
+		
+    },
+	
+	//当月日数取得
+	getDaysOfMonth: function() {
+		var rightnow = new GlideDateTime();
+		return rightnow.getDaysInMonthLocalTime();	
+		
+	},
+	
+	
+	
+	
+	
+    type: 'Utils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-16 04:38:36</sys_created_on>
+        <sys_id>4fc904621bf3301074fcc841604bcb91</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Utils</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_script_include_4fc904621bf3301074fcc841604bcb91</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-22 05:56:40</sys_updated_on>
+    </sys_script_include>
+</record_update>

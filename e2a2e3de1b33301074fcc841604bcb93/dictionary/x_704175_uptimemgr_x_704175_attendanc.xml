@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="稼働管理" max_length="40" name="x_704175_uptimemgr_x_704175_attendanc" sizeclass="1" type="collection">
+        <element label="完了" max_length="40" name="completed" type="boolean"/>
+        <element label="直接稼働時間" mandatory="true" max_length="20" name="directuptime" type="decimal"/>
+        <element label="要員名" max_length="32" name="name" read_only="true" reference="x_704175_uptimemgr_x_704175_user" type="reference"/>
+        <element label="申請時間(88%)" max_length="15" name="requesttime_88" read_only="true" type="decimal"/>
+        <element label="対象年月" max_length="32" name="targetdate" read_only="true" reference="x_704175_uptimemgr_x_704175_workday" type="reference"/>
+        <element label="割り当て予算" max_length="40" name="total_assignbudget" read_only="true" type="integer"/>
+        <element label="割り当て時間" max_length="15" name="total_assignuptime" read_only="true" type="decimal"/>
+        <element label="稼働日" mandatory="true" max_length="40" name="workingdate" type="integer"/>
+        <element label="稼働時間" max_length="20" name="workingtime" read_only="true" type="decimal"/>
+        <index name="index">
+            <element name="targetdate"/>
+        </index>
+        <index name="index2">
+            <element name="name"/>
+        </index>
+    </element>
+</database>

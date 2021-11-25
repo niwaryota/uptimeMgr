@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="state" label="ステータス" language="en" table="x_704175_uptimemgr_x_704175_requestinfo">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <help/>
+            <hint/>
+            <label>ステータス</label>
+            <language>en</language>
+            <name>x_704175_uptimemgr_x_704175_requestinfo</name>
+            <plural>ステータスs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-11-16 02:26:09</sys_created_on>
+            <sys_id>b34c2f5a1b73301074fcc841604bcb22</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>ステータス</sys_name>
+            <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+            <sys_update_name>sys_documentation_x_704175_uptimemgr_x_704175_requestinfo_state_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-11-16 02:26:09</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

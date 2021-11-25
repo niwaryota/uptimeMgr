@@ -1,0 +1,2720 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-rome-06-23-2021__patch1-hotfix1-09-15-2021_09-16-2021_1434.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>requestforuptimeemail</internal_name>
+        <label_cache>[{"name":"205bdf4e-122d-4720-9105-54fa588490ed.item.user.name","label":"8➛Group Member Record➛User➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"205bdf4e-122d-4720-9105-54fa588490ed.item.user.email","label":"8➛Group Member Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"4c38c515-8c07-409b-9b7b-7e2aba6fa819.__dont_treat_as_error__","label":"11➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4c38c515-8c07-409b-9b7b-7e2aba6fa819.__action_status__","label":"11➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4c38c515-8c07-409b-9b7b-7e2aba6fa819.email","label":"11➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"564bc2ca-9002-4b98-97a3-63957b10e6eb.__dont_treat_as_error__","label":"9➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"564bc2ca-9002-4b98-97a3-63957b10e6eb.__action_status__","label":"9➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"564bc2ca-9002-4b98-97a3-63957b10e6eb.Count","label":"9➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"564bc2ca-9002-4b98-97a3-63957b10e6eb.Table","label":"9➛申請情報 Table","reference":"x_704175_uptimemgr_x_704175_requestinfo","reference_display":"申請情報","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"564bc2ca-9002-4b98-97a3-63957b10e6eb.Records","label":"9➛申請情報 Records","reference":"x_704175_uptimemgr_x_704175_requestinfo","reference_display":"申請情報","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82c77a84-d9f6-44c3-9b37-5df9c5303e6f.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82c77a84-d9f6-44c3-9b37-5df9c5303e6f.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82c77a84-d9f6-44c3-9b37-5df9c5303e6f.Count","label":"7➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82c77a84-d9f6-44c3-9b37-5df9c5303e6f.Table","label":"7➛Group Member Table","reference":"sys_user_grmember","reference_display":"Group Member","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.today_yyyymm","label":"Flow Variables➛today_yyyymm","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"aa6148f5-9088-4bbe-9166-34d0c47664e3"}},{"name":"205bdf4e-122d-4720-9105-54fa588490ed.item.user","label":"8➛Group Member Record➛User","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user_grmember","column_name":"user"},{"name":"82c77a84-d9f6-44c3-9b37-5df9c5303e6f.Records","label":"7➛Group Member Records","reference":"sys_user_grmember","reference_display":"Group Member","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"205bdf4e-122d-4720-9105-54fa588490ed.item","label":"8➛Group Member Record","reference":"sys_user_grmember","reference_display":"Group Member","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"fc5b78b4-acec-4465-9175-d8e337b3e908.__dont_treat_as_error__","label":"9➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"fc5b78b4-acec-4465-9175-d8e337b3e908.__action_status__","label":"9➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"fc5b78b4-acec-4465-9175-d8e337b3e908.error_message","label":"9➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"fc5b78b4-acec-4465-9175-d8e337b3e908.status","label":"9➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"fc5b78b4-acec-4465-9175-d8e337b3e908.Table","label":"9➛申請情報 Table","reference":"x_704175_uptimemgr_x_704175_requestinfo","reference_display":"申請情報","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fc5b78b4-acec-4465-9175-d8e337b3e908.Record","label":"9➛申請情報 Record","reference":"x_704175_uptimemgr_x_704175_requestinfo","reference_display":"申請情報","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable._reinsertday","label":"Flow Variables➛稼働入力催促日","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"84e5048d-1b08-4a9c-8444-738fe8750935"}},{"name":"f5cca787-e137-4e01-84f9-81cba9e5fd6e.item.user.name","label":"4➛Group Member Record➛User➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"f5cca787-e137-4e01-84f9-81cba9e5fd6e.item.user.email","label":"4➛Group Member Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"8e7fbcde-621b-4e69-b830-1038a9a03f3d.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e7fbcde-621b-4e69-b830-1038a9a03f3d.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e7fbcde-621b-4e69-b830-1038a9a03f3d.email","label":"5➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f5cca787-e137-4e01-84f9-81cba9e5fd6e.item","label":"4➛Group Member Record","reference":"sys_user_grmember","reference_display":"Group Member","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"efd1c3c8-bb8c-497a-97ee-68a5e6d57518.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efd1c3c8-bb8c-497a-97ee-68a5e6d57518.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efd1c3c8-bb8c-497a-97ee-68a5e6d57518.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efd1c3c8-bb8c-497a-97ee-68a5e6d57518.Table","label":"3➛Group Member Table","reference":"sys_user_grmember","reference_display":"Group Member","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efd1c3c8-bb8c-497a-97ee-68a5e6d57518.Records","label":"3➛Group Member Records","reference":"sys_user_grmember","reference_display":"Group Member","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3fffa106-6741-41b5-a4ed-3d8fff9b3f6d.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"3fffa106-6741-41b5-a4ed-3d8fff9b3f6d.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"3fffa106-6741-41b5-a4ed-3d8fff9b3f6d.email","label":"3➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.today","label":"Flow Variables➛today","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable._insertday","label":"Flow Variables➛稼働入力依頼日","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e2b57640-cf40-454c-8bfe-22964d08a020"}},{"name":"47c4a1ee-e61d-42c1-af12-ca93e846928c.Record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47c4a1ee-e61d-42c1-af12-ca93e846928c.Table","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47c4a1ee-e61d-42c1-af12-ca93e846928c.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"47c4a1ee-e61d-42c1-af12-ca93e846928c.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"47c4a1ee-e61d-42c1-af12-ca93e846928c.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47c4a1ee-e61d-42c1-af12-ca93e846928c.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1cd65e9c-b61b-40fd-9336-32e15456f42c.email","label":"6➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1cd65e9c-b61b-40fd-9336-32e15456f42c.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"1cd65e9c-b61b-40fd-9336-32e15456f42c.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
+        <master_snapshot>6a4f213a1b37301074fcc841604bcbf5</master_snapshot>
+        <name>RequestForUptimeEmail</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>434f613a1b37301074fcc841604bcbed</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:31:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>054061fa1bf3301074fcc841604bcb5d</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>RequestForUptimeEmail</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_hub_flow_054061fa1bf3301074fcc841604bcb5d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:20</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=054061fa1bf3301074fcc841604bcb5d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=054061fa1bf3301074fcc841604bcb5d"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2021-11-17 06:36:57</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>434f613a1b37301074fcc841604bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:57</sys_updated_on>
+        <time>1970-01-01 18:00:00</time>
+        <timer_type>11</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:434f613a1b37301074fcc841604bcbed^sys_idNOT INc74f613a1b37301074fcc841604bcbed"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Trigger:434f613a1b37301074fcc841604bcbed</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2021-11-17 06:36:57</run_start>
+        <run_time>1970-01-01 18:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('434f613a1b37301074fcc841604bcbed');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:57</sys_created_on>
+        <sys_id>c74f613a1b37301074fcc841604bcbed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:57</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">434f613a1b37301074fcc841604bcbed</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=054061fa1bf3301074fcc841604bcb5d^sys_idNOT IN59f1e17e1bf3301074fcc841604bcbcf"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:38:39</sys_created_on>
+        <sys_id>59f1e17e1bf3301074fcc841604bcbcf</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:20</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=59f1e17e1bf3301074fcc841604bcbcf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>59f1e17e1bf3301074fcc841604bcbcf</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:38:39</sys_created_on>
+        <sys_id>99f1e17e1bf3301074fcc841604bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 05:38:39</sys_updated_on>
+        <value>1970-01-01 10:00:00</value>
+        <variable display_value="Time">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=054061fa1bf3301074fcc841604bcb5d^sys_idNOT IN50f2a1be1bf3301074fcc841604bcba2"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-02 01:00:00</duration>
+        <flow display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</flow>
+        <label>a</label>
+        <order>0</order>
+        <stage_id>c1893bd4-0e62-4c10-aed6-e6314ad8e211</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:42:57</sys_created_on>
+        <sys_id>50f2a1be1bf3301074fcc841604bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 05:42:57</sys_updated_on>
+        <type>standard</type>
+        <value>1</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=054061fa1bf3301074fcc841604bcb5d^sys_idNOT IN594061fa1bf3301074fcc841604bcb5f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>054061fa1bf3301074fcc841604bcb5d</id>
+        <name>RequestForUptimeEmail</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:31:16</sys_created_on>
+        <sys_id>594061fa1bf3301074fcc841604bcb5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 05:31:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="delete_multiple" query="flow=054061fa1bf3301074fcc841604bcb5d^sys_idNOT IN2f8e25f61b37301074fcc841604bcb19,338e25f61b37301074fcc841604bcb47,6c2f6df61b37301074fcc841604bcb9a,f38e25f61b37301074fcc841604bcb3c,fb8e25f61b37301074fcc841604bcb26"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</flow>
+        <order>3</order>
+        <parent_ui_id>c8169515-e89f-4cd0-b702-61670d4d2fc7</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>2f8e25f61b37301074fcc841604bcb19</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:00:05</sys_updated_on>
+        <ui_id>efd1c3c8-bb8c-497a-97ee-68a5e6d57518</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2f8e25f61b37301074fcc841604bcb19"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2f8e25f61b37301074fcc841604bcb19</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>ab8e25f61b37301074fcc841604bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <value>sys_user_grmember</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2f8e25f61b37301074fcc841604bcb19</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>e78e25f61b37301074fcc841604bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <value>group=921ea0ae1b37301074fcc841604bcbc7</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=2f8e25f61b37301074fcc841604bcb19"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</flow>
+        <order>9</order>
+        <parent_ui_id>205bdf4e-122d-4720-9105-54fa588490ed</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>338e25f61b37301074fcc841604bcb47</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:00:05</sys_updated_on>
+        <ui_id>564bc2ca-9002-4b98-97a3-63957b10e6eb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=338e25f61b37301074fcc841604bcb47"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>338e25f61b37301074fcc841604bcb47</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>bb8e25f61b37301074fcc841604bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <value>x_704175_uptimemgr_x_704175_requestinfo</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=338e25f61b37301074fcc841604bcb47"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>338e25f61b37301074fcc841604bcb47</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>778e25f61b37301074fcc841604bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>name.name={{205bdf4e-122d-4720-9105-54fa588490ed.item.user}}^targetdate.targetdate={{flow_variable.today_yyyymm}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>338e25f61b37301074fcc841604bcb47</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>3b8e25f61b37301074fcc841604bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</flow>
+        <order>11</order>
+        <parent_ui_id>372ee0e9-d224-4023-879e-9575c82d0b08</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:13</sys_created_on>
+        <sys_id>6c2f6df61b37301074fcc841604bcb9a</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:00:05</sys_updated_on>
+        <ui_id>4c38c515-8c07-409b-9b7b-7e2aba6fa819</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6c2f6df61b37301074fcc841604bcb9a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6c2f6df61b37301074fcc841604bcb9a</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:13</sys_created_on>
+        <sys_id>202f6df61b37301074fcc841604bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:13</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6c2f6df61b37301074fcc841604bcb9a</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:41:05</sys_created_on>
+        <sys_id>bf30b97a1b37301074fcc841604bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:05</sys_updated_on>
+        <value>son_k@setsw.co.jp</value>
+        <variable display_value="CC">d9806bf4a70323008299b39f087901e0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6c2f6df61b37301074fcc841604bcb9a</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:13</sys_created_on>
+        <sys_id>e02f6df61b37301074fcc841604bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:13</sys_updated_on>
+        <value>Subject:稼働時間入力依頼(リマインド)
+</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6c2f6df61b37301074fcc841604bcb9a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>6c2f6df61b37301074fcc841604bcb9a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:13</sys_created_on>
+        <sys_id>e82f6df61b37301074fcc841604bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;span style="font-size: 16.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:b027e1e5-d513-409b-944f-cbb04e3f6278}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:b027e1e5-d513-409b-944f-cbb04e3f6278}}"&gt;&lt;span class="data-pill-content-container"&gt;8&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Group Member Record&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;User&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Name&lt;button id="transform_function_facade_b027e1e5-d513-409b-944f-cbb04e3f6278" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;さん&lt;/span&gt;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;span style="font-size: 16.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;以下の&lt;/span&gt;&lt;span style="font-size: 16.0pt; font-family: Arial; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: en-US; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;URL&lt;/span&gt;&lt;span style="font-size: 16.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;へアクセスして&lt;/span&gt;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;span style="font-size: 16.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;入力フォームから今月の稼働時間を&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;span style="font-size: 16pt; font-family: 'ＭＳ Ｐゴシック'; font-variant-numeric: normal; font-variant-east-asian: normal; color: black; vertical-align: baseline;"&gt;入力してください&lt;/span&gt;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;span style="font-size: 16pt; font-family: 'ＭＳ Ｐゴシック'; font-variant-numeric: normal; font-variant-east-asian: normal; color: black; vertical-align: baseline;"&gt;&lt;a href="https://dev115550.service-now.com/nav_to.do?uri=%2Fx_704175_uptimemgr_x_704175_requestinfo.do%3Fsys_id%3D-1%26sysparm_stack%3Dx_704175_uptimemgr_x_704175_requestinfo_list.do"&gt;稼働時間入力&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>6c2f6df61b37301074fcc841604bcb9a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:41:05</sys_created_on>
+        <sys_id>3f30b97a1b37301074fcc841604bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>6c2f6df61b37301074fcc841604bcb9a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:13</sys_created_on>
+        <sys_id>ac2f6df61b37301074fcc841604bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>6c2f6df61b37301074fcc841604bcb9a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:13</sys_created_on>
+        <sys_id>282f6df61b37301074fcc841604bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{205bdf4e-122d-4720-9105-54fa588490ed.item.user.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</flow>
+        <order>7</order>
+        <parent_ui_id>a810d5bd-6dd8-4bae-b940-d3a18aacf994</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>f38e25f61b37301074fcc841604bcb3c</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:00:05</sys_updated_on>
+        <ui_id>82c77a84-d9f6-44c3-9b37-5df9c5303e6f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f38e25f61b37301074fcc841604bcb3c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f38e25f61b37301074fcc841604bcb3c</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>338e25f61b37301074fcc841604bcb3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <value>sys_user_grmember</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f38e25f61b37301074fcc841604bcb3c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>7f8e25f61b37301074fcc841604bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <value>group=921ea0ae1b37301074fcc841604bcbc7</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=f38e25f61b37301074fcc841604bcb3c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</flow>
+        <order>5</order>
+        <parent_ui_id>f5cca787-e137-4e01-84f9-81cba9e5fd6e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>fb8e25f61b37301074fcc841604bcb26</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 18:00:05</sys_updated_on>
+        <ui_id>8e7fbcde-621b-4e69-b830-1038a9a03f3d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fb8e25f61b37301074fcc841604bcb26"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fb8e25f61b37301074fcc841604bcb26</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>3b8e25f61b37301074fcc841604bcb29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <value>Subject:稼働時間入力依頼
+</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fb8e25f61b37301074fcc841604bcb26</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>778e25f61b37301074fcc841604bcb29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fb8e25f61b37301074fcc841604bcb26</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:41:05</sys_created_on>
+        <sys_id>bf30b97a1b37301074fcc841604bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:05</sys_updated_on>
+        <value>son_k@setsw.co.jp</value>
+        <variable display_value="CC">d9806bf4a70323008299b39f087901e0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fb8e25f61b37301074fcc841604bcb26"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>fb8e25f61b37301074fcc841604bcb26</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>338e25f61b37301074fcc841604bcb29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:b07dd750-1c83-4d0c-8f49-c3ee80158677}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:b07dd750-1c83-4d0c-8f49-c3ee80158677}}"&gt;&lt;span class="data-pill-content-container"&gt;4&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Group Member Record&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;User&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Name&lt;button id="transform_function_facade_b07dd750-1c83-4d0c-8f49-c3ee80158677" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;さん&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;span style="font-size: 14.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;以下の&lt;/span&gt;&lt;span style="font-size: 14.0pt; font-family: Arial; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: en-US; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;URL&lt;/span&gt;&lt;span style="font-size: 14.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;へアクセスして入力フォームから&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;span style="font-size: 14.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;今月の稼働時間を入力&lt;/span&gt;&lt;span style="font-size: 14.0pt; font-family: Arial; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: en-US; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;/&lt;/span&gt;&lt;span style="font-size: 14.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;申請&lt;/span&gt;&lt;span style="font-size: 14pt; font-family: 'ＭＳ Ｐゴシック'; font-variant-numeric: normal; font-variant-east-asian: normal; color: black; vertical-align: baseline;"&gt;してください&lt;/span&gt;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;a href="https://dev115550.service-now.com/nav_to.do?uri=%2Fx_704175_uptimemgr_x_704175_requestinfo.do%3Fsys_id%3D-1%26sysparm_stack%3Dx_704175_uptimemgr_x_704175_requestinfo_list.do"&gt;稼働入力&lt;/a&gt;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>fb8e25f61b37301074fcc841604bcb26</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:41:05</sys_created_on>
+        <sys_id>3f30b97a1b37301074fcc841604bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>fb8e25f61b37301074fcc841604bcb26</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>f38e25f61b37301074fcc841604bcb29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>fb8e25f61b37301074fcc841604bcb26</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>7f8e25f61b37301074fcc841604bcb28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f5cca787-e137-4e01-84f9-81cba9e5fd6e.item.user.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=054061fa1bf3301074fcc841604bcb5d^sys_idNOT IN5cf2a1be1bf3301074fcc841604bcb9d,778e25f61b37301074fcc841604bcb49,d9f1e17e1bf3301074fcc841604bcbe2,eb8e25f61b37301074fcc841604bcb1d,fb8e25f61b37301074fcc841604bcb32,fb8e25f61b37301074fcc841604bcb3e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">94f2a1be1bf3301074fcc841604bcb9d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:42:57</sys_created_on>
+        <sys_id>5cf2a1be1bf3301074fcc841604bcb9d</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:20</sys_updated_on>
+        <ui_id>c8169515-e89f-4cd0-b702-61670d4d2fc7</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5cf2a1be1bf3301074fcc841604bcb9d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5cf2a1be1bf3301074fcc841604bcb9d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:42:57</sys_created_on>
+        <sys_id>dcf2a1be1bf3301074fcc841604bcba0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <value>稼働入力依頼日</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_054061fa1bf3301074fcc841604bcb5d^id=5cf2a1be1bf3301074fcc841604bcb9d"/>
+    <sys_element_mapping action="delete_multiple" query="id=5cf2a1be1bf3301074fcc841604bcb9d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>5cf2a1be1bf3301074fcc841604bcb9d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>678e25f61b37301074fcc841604bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{flow_variable._insertday}}={{flow_variable.today}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>5cf2a1be1bf3301074fcc841604bcb9d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:42:57</sys_created_on>
+        <sys_id>5cf2a1be1bf3301074fcc841604bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 05:42:57</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">bf8e25f61b37301074fcc841604bcb48</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>205bdf4e-122d-4720-9105-54fa588490ed</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>778e25f61b37301074fcc841604bcb49</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:20</sys_updated_on>
+        <ui_id>372ee0e9-d224-4023-879e-9575c82d0b08</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=778e25f61b37301074fcc841604bcb49"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>778e25f61b37301074fcc841604bcb49</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>f78e25f61b37301074fcc841604bcb4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <value>申請情報検索結果</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_054061fa1bf3301074fcc841604bcb5d^id=778e25f61b37301074fcc841604bcb49"/>
+    <sys_element_mapping action="delete_multiple" query="id=778e25f61b37301074fcc841604bcb49"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>778e25f61b37301074fcc841604bcb49</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>778e25f61b37301074fcc841604bcb4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{564bc2ca-9002-4b98-97a3-63957b10e6eb.Count}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>778e25f61b37301074fcc841604bcb49</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>b38e25f61b37301074fcc841604bcb4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">11f1e17e1bf3301074fcc841604bcbe2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</flow>
+        <flow_variable/>
+        <flow_variables_assigned>_insertday,_reinsertday,today,today_yyyymm</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:38:39</sys_created_on>
+        <sys_id>d9f1e17e1bf3301074fcc841604bcbe2</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:20</sys_updated_on>
+        <ui_id>03ab531c-aa2d-4684-b1c6-2e1e2b976daf</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d9f1e17e1bf3301074fcc841604bcbe2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>d9f1e17e1bf3301074fcc841604bcbe2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:38:40</sys_created_on>
+        <sys_id>65f1e17e1bf3301074fcc841604bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 05:38:40</sys_updated_on>
+        <value/>
+        <variable display_value="稼働入力催促日">95f1e17e1bf3301074fcc841604bcbdb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>d9f1e17e1bf3301074fcc841604bcbe2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:38:40</sys_created_on>
+        <sys_id>a1f1e17e1bf3301074fcc841604bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 05:38:40</sys_updated_on>
+        <value>0</value>
+        <variable display_value="稼働入力依頼日">15f1e17e1bf3301074fcc841604bcbd2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>d9f1e17e1bf3301074fcc841604bcbe2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>e38e25f61b37301074fcc841604bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <value/>
+        <variable display_value="today">af8ee1f61b37301074fcc841604bcbf0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_054061fa1bf3301074fcc841604bcb5d^id=d9f1e17e1bf3301074fcc841604bcbe2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d9f1e17e1bf3301074fcc841604bcbe2^sys_idNOT IN1df1e17e1bf3301074fcc841604bcbf0,5df1e17e1bf3301074fcc841604bcbe3,638e25f61b37301074fcc841604bcb07,6b8e25f61b37301074fcc841604bcb07"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>_reinsertday</input_name>
+        <instance>d9f1e17e1bf3301074fcc841604bcbe2</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"_reinsertday":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn gs.getProperty(\u0027x_704175_uptimemgr.稼働入力催促日\u0027);"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:38:40</sys_created_on>
+        <sys_id>1df1e17e1bf3301074fcc841604bcbf0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:38:13</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>_insertday</input_name>
+        <instance>d9f1e17e1bf3301074fcc841604bcbe2</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"_insertday":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn gs.getProperty(\u0027x_704175_uptimemgr.稼働入力依頼日\u0027);"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:38:39</sys_created_on>
+        <sys_id>5df1e17e1bf3301074fcc841604bcbe3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:38:13</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>today</input_name>
+        <instance>d9f1e17e1bf3301074fcc841604bcbe2</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"today":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar rightnow \u003d new GlideDateTime();\nreturn rightnow.getDayOfMonthLocalTime();"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>638e25f61b37301074fcc841604bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>today_yyyymm</input_name>
+        <instance>d9f1e17e1bf3301074fcc841604bcbe2</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"today_yyyymm":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar rightnow \u003d new GlideDateTime();\nreturn rightnow.getYearLocalTime()+\"/\"+rightnow.getMonthLocalTime();"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>6b8e25f61b37301074fcc841604bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">238e25f61b37301074fcc841604bcb1d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c8169515-e89f-4cd0-b702-61670d4d2fc7</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>eb8e25f61b37301074fcc841604bcb1d</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:20</sys_updated_on>
+        <ui_id>f5cca787-e137-4e01-84f9-81cba9e5fd6e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=eb8e25f61b37301074fcc841604bcb1d"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_054061fa1bf3301074fcc841604bcb5d^id=eb8e25f61b37301074fcc841604bcb1d"/>
+    <sys_element_mapping action="delete_multiple" query="id=eb8e25f61b37301074fcc841604bcb1d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>eb8e25f61b37301074fcc841604bcb1d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>ab8e25f61b37301074fcc841604bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{efd1c3c8-bb8c-497a-97ee-68a5e6d57518.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">378e25f61b37301074fcc841604bcb32</block>
+        <comment/>
+        <connected_to>c8169515-e89f-4cd0-b702-61670d4d2fc7</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>fb8e25f61b37301074fcc841604bcb32</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:20</sys_updated_on>
+        <ui_id>a810d5bd-6dd8-4bae-b940-d3a18aacf994</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=fb8e25f61b37301074fcc841604bcb32"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>fb8e25f61b37301074fcc841604bcb32</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>378e25f61b37301074fcc841604bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <value>稼働入力催促日</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_054061fa1bf3301074fcc841604bcb5d^id=fb8e25f61b37301074fcc841604bcb32"/>
+    <sys_element_mapping action="delete_multiple" query="id=fb8e25f61b37301074fcc841604bcb32"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>fb8e25f61b37301074fcc841604bcb32</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>b38e25f61b37301074fcc841604bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{flow_variable._reinsertday}}={{flow_variable.today}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>fb8e25f61b37301074fcc841604bcb32</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>ff8e25f61b37301074fcc841604bcb35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">378e25f61b37301074fcc841604bcb3e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a810d5bd-6dd8-4bae-b940-d3a18aacf994</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>fb8e25f61b37301074fcc841604bcb3e</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:20</sys_updated_on>
+        <ui_id>205bdf4e-122d-4720-9105-54fa588490ed</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=fb8e25f61b37301074fcc841604bcb3e"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_054061fa1bf3301074fcc841604bcb5d^id=fb8e25f61b37301074fcc841604bcb3e"/>
+    <sys_element_mapping action="delete_multiple" query="id=fb8e25f61b37301074fcc841604bcb3e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>fb8e25f61b37301074fcc841604bcb3e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:42</sys_created_on>
+        <sys_id>378e25f61b37301074fcc841604bcb41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{82c77a84-d9f6-44c3-9b37-5df9c5303e6f.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=054061fa1bf3301074fcc841604bcb5d^sys_idNOT IN3b8e25f61b37301074fcc841604bcb4e,642f6df61b37301074fcc841604bcb9e,ff8e25f61b37301074fcc841604bcb4e"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>054061fa1bf3301074fcc841604bcb5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{f5cca787-e137-4e01-84f9-81cba9e5fd6e.item.user.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:43</sys_created_on>
+        <sys_id>3b8e25f61b37301074fcc841604bcb4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b07dd750-1c83-4d0c-8f49-c3ee80158677</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>054061fa1bf3301074fcc841604bcb5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{205bdf4e-122d-4720-9105-54fa588490ed.item.user.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:13</sys_created_on>
+        <sys_id>642f6df61b37301074fcc841604bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b027e1e5-d513-409b-944f-cbb04e3f6278</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>054061fa1bf3301074fcc841604bcb5d</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{f5cca787-e137-4e01-84f9-81cba9e5fd6e.item.user.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:43</sys_created_on>
+        <sys_id>ff8e25f61b37301074fcc841604bcb4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>5f8b6499-8c47-44a0-88b7-793e502cf5f3</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=054061fa1bf3301074fcc841604bcb5d^sys_idNOT IN15f1e17e1bf3301074fcc841604bcbd2,95f1e17e1bf3301074fcc841604bcbdb,af8ee1f61b37301074fcc841604bcbf0,e38ee1f61b37301074fcc841604bcbfa"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=e2b57640-cf40-454c-8bfe-22964d08a020</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>_insertday</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>稼働入力依頼日</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</model>
+        <model_id>054061fa1bf3301074fcc841604bcb5d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_054061fa1bf3301074fcc841604bcb5d</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:38:39</sys_created_on>
+        <sys_id>15f1e17e1bf3301074fcc841604bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>稼働入力依頼日</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_15f1e17e1bf3301074fcc841604bcbd2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 05:38:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=84e5048d-1b08-4a9c-8444-738fe8750935</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>_reinsertday</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>稼働入力催促日</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</model>
+        <model_id>054061fa1bf3301074fcc841604bcb5d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_054061fa1bf3301074fcc841604bcb5d</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 05:38:39</sys_created_on>
+        <sys_id>95f1e17e1bf3301074fcc841604bcbdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>稼働入力催促日</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_95f1e17e1bf3301074fcc841604bcbdb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 05:38:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>today</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>today</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</model>
+        <model_id>054061fa1bf3301074fcc841604bcb5d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_054061fa1bf3301074fcc841604bcb5d</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:41</sys_created_on>
+        <sys_id>af8ee1f61b37301074fcc841604bcbf0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>today</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_af8ee1f61b37301074fcc841604bcbf0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=aa6148f5-9088-4bbe-9166-34d0c47664e3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>today_yyyymm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>today_yyyymm</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</model>
+        <model_id>054061fa1bf3301074fcc841604bcb5d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_054061fa1bf3301074fcc841604bcb5d</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:33:41</sys_created_on>
+        <sys_id>e38ee1f61b37301074fcc841604bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>today_yyyymm</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_e38ee1f61b37301074fcc841604bcbfa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:33:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=054061fa1bf3301074fcc841604bcb5d^sys_idNOT IN9f4f613a1b37301074fcc841604bcbef"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"9f4f613a1b37301074fcc841604bcbef","name":"plan","plan_signature":null}}</plan>
+        <plan_id>054061fa1bf3301074fcc841604bcb5d</plan_id>
+        <snapshot>c6ab04431b3f301074fcc841604bcbc1</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9f4f613a1b37301074fcc841604bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:57</sys_updated_on>
+        <trigger display_value="">434f613a1b37301074fcc841604bcbed</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>requestforuptimeemail</internal_name>
+        <label_cache>[{"name":"205bdf4e-122d-4720-9105-54fa588490ed.item.user.name","label":"8➛Group Member Record➛User➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"205bdf4e-122d-4720-9105-54fa588490ed.item.user.email","label":"8➛Group Member Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"4c38c515-8c07-409b-9b7b-7e2aba6fa819.__dont_treat_as_error__","label":"11➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4c38c515-8c07-409b-9b7b-7e2aba6fa819.__action_status__","label":"11➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4c38c515-8c07-409b-9b7b-7e2aba6fa819.email","label":"11➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"564bc2ca-9002-4b98-97a3-63957b10e6eb.__dont_treat_as_error__","label":"9➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"564bc2ca-9002-4b98-97a3-63957b10e6eb.__action_status__","label":"9➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"564bc2ca-9002-4b98-97a3-63957b10e6eb.Count","label":"9➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"564bc2ca-9002-4b98-97a3-63957b10e6eb.Table","label":"9➛申請情報 Table","reference":"x_704175_uptimemgr_x_704175_requestinfo","reference_display":"申請情報","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"564bc2ca-9002-4b98-97a3-63957b10e6eb.Records","label":"9➛申請情報 Records","reference":"x_704175_uptimemgr_x_704175_requestinfo","reference_display":"申請情報","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82c77a84-d9f6-44c3-9b37-5df9c5303e6f.__dont_treat_as_error__","label":"7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82c77a84-d9f6-44c3-9b37-5df9c5303e6f.__action_status__","label":"7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82c77a84-d9f6-44c3-9b37-5df9c5303e6f.Count","label":"7➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"82c77a84-d9f6-44c3-9b37-5df9c5303e6f.Table","label":"7➛Group Member Table","reference":"sys_user_grmember","reference_display":"Group Member","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.today_yyyymm","label":"Flow Variables➛today_yyyymm","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"aa6148f5-9088-4bbe-9166-34d0c47664e3"}},{"name":"205bdf4e-122d-4720-9105-54fa588490ed.item.user","label":"8➛Group Member Record➛User","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user_grmember","column_name":"user"},{"name":"82c77a84-d9f6-44c3-9b37-5df9c5303e6f.Records","label":"7➛Group Member Records","reference":"sys_user_grmember","reference_display":"Group Member","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"205bdf4e-122d-4720-9105-54fa588490ed.item","label":"8➛Group Member Record","reference":"sys_user_grmember","reference_display":"Group Member","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"fc5b78b4-acec-4465-9175-d8e337b3e908.__dont_treat_as_error__","label":"9➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"fc5b78b4-acec-4465-9175-d8e337b3e908.__action_status__","label":"9➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"fc5b78b4-acec-4465-9175-d8e337b3e908.error_message","label":"9➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"fc5b78b4-acec-4465-9175-d8e337b3e908.status","label":"9➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"fc5b78b4-acec-4465-9175-d8e337b3e908.Table","label":"9➛申請情報 Table","reference":"x_704175_uptimemgr_x_704175_requestinfo","reference_display":"申請情報","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fc5b78b4-acec-4465-9175-d8e337b3e908.Record","label":"9➛申請情報 Record","reference":"x_704175_uptimemgr_x_704175_requestinfo","reference_display":"申請情報","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable._reinsertday","label":"Flow Variables➛稼働入力催促日","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"84e5048d-1b08-4a9c-8444-738fe8750935"}},{"name":"f5cca787-e137-4e01-84f9-81cba9e5fd6e.item.user.name","label":"4➛Group Member Record➛User➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"f5cca787-e137-4e01-84f9-81cba9e5fd6e.item.user.email","label":"4➛Group Member Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"8e7fbcde-621b-4e69-b830-1038a9a03f3d.__dont_treat_as_error__","label":"5➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e7fbcde-621b-4e69-b830-1038a9a03f3d.__action_status__","label":"5➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e7fbcde-621b-4e69-b830-1038a9a03f3d.email","label":"5➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f5cca787-e137-4e01-84f9-81cba9e5fd6e.item","label":"4➛Group Member Record","reference":"sys_user_grmember","reference_display":"Group Member","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"efd1c3c8-bb8c-497a-97ee-68a5e6d57518.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efd1c3c8-bb8c-497a-97ee-68a5e6d57518.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efd1c3c8-bb8c-497a-97ee-68a5e6d57518.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efd1c3c8-bb8c-497a-97ee-68a5e6d57518.Table","label":"3➛Group Member Table","reference":"sys_user_grmember","reference_display":"Group Member","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"efd1c3c8-bb8c-497a-97ee-68a5e6d57518.Records","label":"3➛Group Member Records","reference":"sys_user_grmember","reference_display":"Group Member","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3fffa106-6741-41b5-a4ed-3d8fff9b3f6d.__dont_treat_as_error__","label":"3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"3fffa106-6741-41b5-a4ed-3d8fff9b3f6d.__action_status__","label":"3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"3fffa106-6741-41b5-a4ed-3d8fff9b3f6d.email","label":"3➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.today","label":"Flow Variables➛today","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable._insertday","label":"Flow Variables➛稼働入力依頼日","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e2b57640-cf40-454c-8bfe-22964d08a020"}},{"name":"47c4a1ee-e61d-42c1-af12-ca93e846928c.Record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47c4a1ee-e61d-42c1-af12-ca93e846928c.Table","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47c4a1ee-e61d-42c1-af12-ca93e846928c.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"47c4a1ee-e61d-42c1-af12-ca93e846928c.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"47c4a1ee-e61d-42c1-af12-ca93e846928c.__action_status__","label":"2➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"47c4a1ee-e61d-42c1-af12-ca93e846928c.__dont_treat_as_error__","label":"2➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1cd65e9c-b61b-40fd-9336-32e15456f42c.email","label":"6➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1cd65e9c-b61b-40fd-9336-32e15456f42c.__action_status__","label":"6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"1cd65e9c-b61b-40fd-9336-32e15456f42c.__dont_treat_as_error__","label":"6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
+        <master>true</master>
+        <name>RequestForUptimeEmail</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="RequestForUptimeEmail">054061fa1bf3301074fcc841604bcb5d</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6a4f213a1b37301074fcc841604bcbf5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:18</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=6a4f213a1b37301074fcc841604bcbf5"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6a4f213a1b37301074fcc841604bcbf5"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=6a4f213a1b37301074fcc841604bcbf5^sys_idNOT INba4f613a1b37301074fcc841604bcb68"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>ba4f613a1b37301074fcc841604bcb68</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:20</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ba4f613a1b37301074fcc841604bcb68"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>ba4f613a1b37301074fcc841604bcb68</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>364f613a1b37301074fcc841604bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value>1970-01-01 10:00:00</value>
+        <variable display_value="Time">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=6a4f213a1b37301074fcc841604bcbf5^sys_idNOT IN7a4f613a1b37301074fcc841604bcb69"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-02 01:00:00</duration>
+        <flow display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</flow>
+        <label>a</label>
+        <order>0</order>
+        <stage_id>c1893bd4-0e62-4c10-aed6-e6314ad8e211</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>7a4f613a1b37301074fcc841604bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <type>standard</type>
+        <value>1</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6a4f213a1b37301074fcc841604bcbf5^sys_idNOT INaa4f213a1b37301074fcc841604bcbf6"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6a4f213a1b37301074fcc841604bcbf5</id>
+        <name>RequestForUptimeEmail</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:54</sys_created_on>
+        <sys_id>aa4f213a1b37301074fcc841604bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:54</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="delete_multiple" query="flow=6a4f213a1b37301074fcc841604bcbf5^sys_idNOT IN324f613a1b37301074fcc841604bcb66,364f613a1b37301074fcc841604bcb5e,3a4f613a1b37301074fcc841604bcb56,724f613a1b37301074fcc841604bcb46,f24f613a1b37301074fcc841604bcb4e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</flow>
+        <order>11</order>
+        <parent_ui_id>372ee0e9-d224-4023-879e-9575c82d0b08</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>324f613a1b37301074fcc841604bcb66</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:18</sys_updated_on>
+        <ui_id>4c38c515-8c07-409b-9b7b-7e2aba6fa819</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=324f613a1b37301074fcc841604bcb66"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>324f613a1b37301074fcc841604bcb66</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:41:17</sys_created_on>
+        <sys_id>3a407d7a1b37301074fcc841604bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:17</sys_updated_on>
+        <value>son_k@setsw.co.jp</value>
+        <variable display_value="CC">d9806bf4a70323008299b39f087901e0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>324f613a1b37301074fcc841604bcb66</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>b64f613a1b37301074fcc841604bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value>Subject:稼働時間入力依頼(リマインド)
+</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>324f613a1b37301074fcc841604bcb66</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>f24f613a1b37301074fcc841604bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=324f613a1b37301074fcc841604bcb66"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>324f613a1b37301074fcc841604bcb66</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>be4f613a1b37301074fcc841604bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;span style="font-size: 16.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:b027e1e5-d513-409b-944f-cbb04e3f6278}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:b027e1e5-d513-409b-944f-cbb04e3f6278}}"&gt;&lt;span class="data-pill-content-container"&gt;8&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Group Member Record&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;User&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Name&lt;button id="transform_function_facade_b027e1e5-d513-409b-944f-cbb04e3f6278" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;さん&lt;/span&gt;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;span style="font-size: 16.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;以下の&lt;/span&gt;&lt;span style="font-size: 16.0pt; font-family: Arial; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: en-US; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;URL&lt;/span&gt;&lt;span style="font-size: 16.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;へアクセスして&lt;/span&gt;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;span style="font-size: 16.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;入力フォームから今月の稼働時間を&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;span style="font-size: 16pt; font-family: 'ＭＳ Ｐゴシック'; font-variant-numeric: normal; font-variant-east-asian: normal; color: black; vertical-align: baseline;"&gt;入力してください&lt;/span&gt;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;span style="font-size: 16pt; font-family: 'ＭＳ Ｐゴシック'; font-variant-numeric: normal; font-variant-east-asian: normal; color: black; vertical-align: baseline;"&gt;&lt;a href="https://dev115550.service-now.com/nav_to.do?uri=%2Fx_704175_uptimemgr_x_704175_requestinfo.do%3Fsys_id%3D-1%26sysparm_stack%3Dx_704175_uptimemgr_x_704175_requestinfo_list.do"&gt;稼働時間入力&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>324f613a1b37301074fcc841604bcb66</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:41:17</sys_created_on>
+        <sys_id>b6407d7a1b37301074fcc841604bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>324f613a1b37301074fcc841604bcb66</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>724f613a1b37301074fcc841604bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>324f613a1b37301074fcc841604bcb66</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>fa4f613a1b37301074fcc841604bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{205bdf4e-122d-4720-9105-54fa588490ed.item.user.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</flow>
+        <order>9</order>
+        <parent_ui_id>205bdf4e-122d-4720-9105-54fa588490ed</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>364f613a1b37301074fcc841604bcb5e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:18</sys_updated_on>
+        <ui_id>564bc2ca-9002-4b98-97a3-63957b10e6eb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=364f613a1b37301074fcc841604bcb5e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>364f613a1b37301074fcc841604bcb5e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>be4f613a1b37301074fcc841604bcb5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value>x_704175_uptimemgr_x_704175_requestinfo</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=364f613a1b37301074fcc841604bcb5e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>364f613a1b37301074fcc841604bcb5e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>7a4f613a1b37301074fcc841604bcb5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>name.name={{205bdf4e-122d-4720-9105-54fa588490ed.item.user}}^targetdate.targetdate={{flow_variable.today_yyyymm}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>364f613a1b37301074fcc841604bcb5e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>3e4f613a1b37301074fcc841604bcb5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</flow>
+        <order>7</order>
+        <parent_ui_id>a810d5bd-6dd8-4bae-b940-d3a18aacf994</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>3a4f613a1b37301074fcc841604bcb56</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:18</sys_updated_on>
+        <ui_id>82c77a84-d9f6-44c3-9b37-5df9c5303e6f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3a4f613a1b37301074fcc841604bcb56"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3a4f613a1b37301074fcc841604bcb56</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>764f613a1b37301074fcc841604bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value>sys_user_grmember</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3a4f613a1b37301074fcc841604bcb56</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>b24f613a1b37301074fcc841604bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value>group=921ea0ae1b37301074fcc841604bcbc7</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=3a4f613a1b37301074fcc841604bcb56"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</flow>
+        <order>3</order>
+        <parent_ui_id>c8169515-e89f-4cd0-b702-61670d4d2fc7</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>724f613a1b37301074fcc841604bcb46</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:18</sys_updated_on>
+        <ui_id>efd1c3c8-bb8c-497a-97ee-68a5e6d57518</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=724f613a1b37301074fcc841604bcb46"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>724f613a1b37301074fcc841604bcb46</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>be4f613a1b37301074fcc841604bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value>sys_user_grmember</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>724f613a1b37301074fcc841604bcb46</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>fa4f613a1b37301074fcc841604bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value>group=921ea0ae1b37301074fcc841604bcbc7</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=724f613a1b37301074fcc841604bcb46"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</flow>
+        <order>5</order>
+        <parent_ui_id>f5cca787-e137-4e01-84f9-81cba9e5fd6e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>f24f613a1b37301074fcc841604bcb4e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:18</sys_updated_on>
+        <ui_id>8e7fbcde-621b-4e69-b830-1038a9a03f3d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f24f613a1b37301074fcc841604bcb4e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f24f613a1b37301074fcc841604bcb4e</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>7a4f613a1b37301074fcc841604bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value>Subject:稼働時間入力依頼
+</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f24f613a1b37301074fcc841604bcb4e</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>b64f613a1b37301074fcc841604bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f24f613a1b37301074fcc841604bcb4e</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:41:17</sys_created_on>
+        <sys_id>ba407d7a1b37301074fcc841604bcb62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:17</sys_updated_on>
+        <value>son_k@setsw.co.jp</value>
+        <variable display_value="CC">d9806bf4a70323008299b39f087901e0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f24f613a1b37301074fcc841604bcb4e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>f24f613a1b37301074fcc841604bcb4e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>724f613a1b37301074fcc841604bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:b07dd750-1c83-4d0c-8f49-c3ee80158677}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:b07dd750-1c83-4d0c-8f49-c3ee80158677}}"&gt;&lt;span class="data-pill-content-container"&gt;4&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Group Member Record&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;User&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;Name&lt;button id="transform_function_facade_b07dd750-1c83-4d0c-8f49-c3ee80158677" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;さん&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;span style="font-size: 14.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;以下の&lt;/span&gt;&lt;span style="font-size: 14.0pt; font-family: Arial; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: en-US; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;URL&lt;/span&gt;&lt;span style="font-size: 14.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;へアクセスして入力フォームから&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;span style="font-size: 14.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;今月の稼働時間を入力&lt;/span&gt;&lt;span style="font-size: 14.0pt; font-family: Arial; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: en-US; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;/&lt;/span&gt;&lt;span style="font-size: 14.0pt; font-family: 'ＭＳ Ｐゴシック'; mso-ascii-font-family: Arial; mso-fareast-font-family: 'ＭＳ Ｐゴシック'; mso-bidi-font-family: Arial; mso-ascii-theme-font: major-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-font-kerning: 12.0pt; language: ja; text-combine: letters; mso-style-textfill-type: solid; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"&gt;申請&lt;/span&gt;&lt;span style="font-size: 14pt; font-family: 'ＭＳ Ｐゴシック'; font-variant-numeric: normal; font-variant-east-asian: normal; color: black; vertical-align: baseline;"&gt;してください&lt;/span&gt;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&lt;a href="https://dev115550.service-now.com/nav_to.do?uri=%2Fx_704175_uptimemgr_x_704175_requestinfo.do%3Fsys_id%3D-1%26sysparm_stack%3Dx_704175_uptimemgr_x_704175_requestinfo_list.do"&gt;稼働入力&lt;/a&gt;&lt;/p&gt;
+&lt;p style="line-height: normal; margin: 0pt 0in; text-indent: 0in; direction: ltr; unicode-bidi: embed; vertical-align: middle; word-break: normal;"&gt;&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>f24f613a1b37301074fcc841604bcb4e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:41:17</sys_created_on>
+        <sys_id>3a407d7a1b37301074fcc841604bcb62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>f24f613a1b37301074fcc841604bcb4e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>364f613a1b37301074fcc841604bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>f24f613a1b37301074fcc841604bcb4e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>be4f613a1b37301074fcc841604bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{f5cca787-e137-4e01-84f9-81cba9e5fd6e.item.user.email}} </value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=6a4f213a1b37301074fcc841604bcbf5^sys_idNOT IN724f613a1b37301074fcc841604bcb1a,724f613a1b37301074fcc841604bcb29,7e4f613a1b37301074fcc841604bcb25,f24f613a1b37301074fcc841604bcb30,fe4f613a1b37301074fcc841604bcb21,fe4f613a1b37301074fcc841604bcb2c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">11f1e17e1bf3301074fcc841604bcbe2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</flow>
+        <flow_variable/>
+        <flow_variables_assigned>_insertday,_reinsertday,today,today_yyyymm</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>724f613a1b37301074fcc841604bcb1a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:18</sys_updated_on>
+        <ui_id>03ab531c-aa2d-4684-b1c6-2e1e2b976daf</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=724f613a1b37301074fcc841604bcb1a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>724f613a1b37301074fcc841604bcb1a</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>724f613a1b37301074fcc841604bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value/>
+        <variable display_value="today">ee4f613a1b37301074fcc841604bcb0c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>724f613a1b37301074fcc841604bcb1a</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>be4f613a1b37301074fcc841604bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value/>
+        <variable display_value="稼働入力催促日">e64f613a1b37301074fcc841604bcb07</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>724f613a1b37301074fcc841604bcb1a</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>fa4f613a1b37301074fcc841604bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value>0</value>
+        <variable display_value="稼働入力依頼日">2a4f613a1b37301074fcc841604bcb01</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6a4f213a1b37301074fcc841604bcbf5^id=724f613a1b37301074fcc841604bcb1a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=724f613a1b37301074fcc841604bcb1a^sys_idNOT IN324f613a1b37301074fcc841604bcb1c,364f613a1b37301074fcc841604bcb1b,3a4f613a1b37301074fcc841604bcb1b,3e4f613a1b37301074fcc841604bcb1b"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>today_yyyymm</input_name>
+        <instance>724f613a1b37301074fcc841604bcb1a</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"today_yyyymm":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar rightnow \u003d new GlideDateTime();\nreturn rightnow.getYearLocalTime()+\"/\"+rightnow.getMonthLocalTime();"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>324f613a1b37301074fcc841604bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>_insertday</input_name>
+        <instance>724f613a1b37301074fcc841604bcb1a</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"_insertday":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn gs.getProperty(\u0027x_704175_uptimemgr.稼働入力依頼日\u0027);"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>364f613a1b37301074fcc841604bcb1b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:38:24</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>_reinsertday</input_name>
+        <instance>724f613a1b37301074fcc841604bcb1a</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"_reinsertday":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn gs.getProperty(\u0027x_704175_uptimemgr.稼働入力催促日\u0027);"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>3a4f613a1b37301074fcc841604bcb1b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:38:24</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>today</input_name>
+        <instance>724f613a1b37301074fcc841604bcb1a</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"today":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar rightnow \u003d new GlideDateTime();\nreturn rightnow.getDayOfMonthLocalTime();"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>3e4f613a1b37301074fcc841604bcb1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">378e25f61b37301074fcc841604bcb32</block>
+        <comment/>
+        <connected_to>c8169515-e89f-4cd0-b702-61670d4d2fc7</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>724f613a1b37301074fcc841604bcb29</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:18</sys_updated_on>
+        <ui_id>a810d5bd-6dd8-4bae-b940-d3a18aacf994</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=724f613a1b37301074fcc841604bcb29"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>724f613a1b37301074fcc841604bcb29</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>f24f613a1b37301074fcc841604bcb2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value>稼働入力催促日</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6a4f213a1b37301074fcc841604bcbf5^id=724f613a1b37301074fcc841604bcb29"/>
+    <sys_element_mapping action="delete_multiple" query="id=724f613a1b37301074fcc841604bcb29"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>724f613a1b37301074fcc841604bcb29</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>724f613a1b37301074fcc841604bcb2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{flow_variable._reinsertday}}={{flow_variable.today}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>724f613a1b37301074fcc841604bcb29</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>be4f613a1b37301074fcc841604bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">238e25f61b37301074fcc841604bcb1d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c8169515-e89f-4cd0-b702-61670d4d2fc7</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>7e4f613a1b37301074fcc841604bcb25</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:18</sys_updated_on>
+        <ui_id>f5cca787-e137-4e01-84f9-81cba9e5fd6e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7e4f613a1b37301074fcc841604bcb25"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6a4f213a1b37301074fcc841604bcbf5^id=7e4f613a1b37301074fcc841604bcb25"/>
+    <sys_element_mapping action="delete_multiple" query="id=7e4f613a1b37301074fcc841604bcb25"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>7e4f613a1b37301074fcc841604bcb25</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>b64f613a1b37301074fcc841604bcb28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{efd1c3c8-bb8c-497a-97ee-68a5e6d57518.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">bf8e25f61b37301074fcc841604bcb48</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>205bdf4e-122d-4720-9105-54fa588490ed</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>f24f613a1b37301074fcc841604bcb30</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:18</sys_updated_on>
+        <ui_id>372ee0e9-d224-4023-879e-9575c82d0b08</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f24f613a1b37301074fcc841604bcb30"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f24f613a1b37301074fcc841604bcb30</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>3e4f613a1b37301074fcc841604bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value>申請情報検索結果</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6a4f213a1b37301074fcc841604bcbf5^id=f24f613a1b37301074fcc841604bcb30"/>
+    <sys_element_mapping action="delete_multiple" query="id=f24f613a1b37301074fcc841604bcb30"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>f24f613a1b37301074fcc841604bcb30</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>ba4f613a1b37301074fcc841604bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{564bc2ca-9002-4b98-97a3-63957b10e6eb.Count}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>f24f613a1b37301074fcc841604bcb30</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>f64f613a1b37301074fcc841604bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">94f2a1be1bf3301074fcc841604bcb9d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>fe4f613a1b37301074fcc841604bcb21</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:18</sys_updated_on>
+        <ui_id>c8169515-e89f-4cd0-b702-61670d4d2fc7</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=fe4f613a1b37301074fcc841604bcb21"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>fe4f613a1b37301074fcc841604bcb21</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>724f613a1b37301074fcc841604bcb25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <value>稼働入力依頼日</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6a4f213a1b37301074fcc841604bcbf5^id=fe4f613a1b37301074fcc841604bcb21"/>
+    <sys_element_mapping action="delete_multiple" query="id=fe4f613a1b37301074fcc841604bcb21"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>fe4f613a1b37301074fcc841604bcb21</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>fe4f613a1b37301074fcc841604bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{flow_variable._insertday}}={{flow_variable.today}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>fe4f613a1b37301074fcc841604bcb21</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>3e4f613a1b37301074fcc841604bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">378e25f61b37301074fcc841604bcb3e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a810d5bd-6dd8-4bae-b940-d3a18aacf994</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>fe4f613a1b37301074fcc841604bcb2c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:41:18</sys_updated_on>
+        <ui_id>205bdf4e-122d-4720-9105-54fa588490ed</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=fe4f613a1b37301074fcc841604bcb2c"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_6a4f213a1b37301074fcc841604bcbf5^id=fe4f613a1b37301074fcc841604bcb2c"/>
+    <sys_element_mapping action="delete_multiple" query="id=fe4f613a1b37301074fcc841604bcb2c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>fe4f613a1b37301074fcc841604bcb2c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>3a4f613a1b37301074fcc841604bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{82c77a84-d9f6-44c3-9b37-5df9c5303e6f.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6a4f213a1b37301074fcc841604bcbf5^sys_idNOT IN724f613a1b37301074fcc841604bcb6a,f24f613a1b37301074fcc841604bcb6a,fe4f613a1b37301074fcc841604bcb69"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6a4f213a1b37301074fcc841604bcbf5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{f5cca787-e137-4e01-84f9-81cba9e5fd6e.item.user.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>724f613a1b37301074fcc841604bcb6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b07dd750-1c83-4d0c-8f49-c3ee80158677</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6a4f213a1b37301074fcc841604bcbf5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{f5cca787-e137-4e01-84f9-81cba9e5fd6e.item.user.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>f24f613a1b37301074fcc841604bcb6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>5f8b6499-8c47-44a0-88b7-793e502cf5f3</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6a4f213a1b37301074fcc841604bcbf5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{205bdf4e-122d-4720-9105-54fa588490ed.item.user.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:55</sys_created_on>
+        <sys_id>fe4f613a1b37301074fcc841604bcb69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:55</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b027e1e5-d513-409b-944f-cbb04e3f6278</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=6a4f213a1b37301074fcc841604bcbf5^sys_idNOT IN2a4f613a1b37301074fcc841604bcb01,a64f613a1b37301074fcc841604bcb12,e64f613a1b37301074fcc841604bcb07,ee4f613a1b37301074fcc841604bcb0c"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=e2b57640-cf40-454c-8bfe-22964d08a020</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>_insertday</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>稼働入力依頼日</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</model>
+        <model_id>6a4f213a1b37301074fcc841604bcbf5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_6a4f213a1b37301074fcc841604bcbf5</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:54</sys_created_on>
+        <sys_id>2a4f613a1b37301074fcc841604bcb01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>稼働入力依頼日</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_2a4f613a1b37301074fcc841604bcb01</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=aa6148f5-9088-4bbe-9166-34d0c47664e3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>today_yyyymm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>today_yyyymm</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</model>
+        <model_id>6a4f213a1b37301074fcc841604bcbf5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_6a4f213a1b37301074fcc841604bcbf5</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:54</sys_created_on>
+        <sys_id>a64f613a1b37301074fcc841604bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>today_yyyymm</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_a64f613a1b37301074fcc841604bcb12</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=84e5048d-1b08-4a9c-8444-738fe8750935</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>_reinsertday</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>稼働入力催促日</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</model>
+        <model_id>6a4f213a1b37301074fcc841604bcbf5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_6a4f213a1b37301074fcc841604bcbf5</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:54</sys_created_on>
+        <sys_id>e64f613a1b37301074fcc841604bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>稼働入力催促日</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_e64f613a1b37301074fcc841604bcb07</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>today</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>today</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="RequestForUptimeEmail">6a4f213a1b37301074fcc841604bcbf5</model>
+        <model_id>6a4f213a1b37301074fcc841604bcbf5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_6a4f213a1b37301074fcc841604bcbf5</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-17 06:36:54</sys_created_on>
+        <sys_id>ee4f613a1b37301074fcc841604bcb0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>today</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_ee4f613a1b37301074fcc841604bcb0c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 06:36:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow action="update">
+        <sys_id>054061fa1bf3301074fcc841604bcb5d</sys_id>
+        <latest_snapshot>6a4f213a1b37301074fcc841604bcbf5</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

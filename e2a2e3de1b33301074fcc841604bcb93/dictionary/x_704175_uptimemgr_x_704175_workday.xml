@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="稼働日マスタ" max_length="40" name="x_704175_uptimemgr_x_704175_workday" sizeclass="5" type="collection">
+        <element display="true" label="年月" mandatory="true" max_length="7" name="targetdate" type="string"/>
+        <element label="営業日数" mandatory="true" max_length="40" name="workday" type="integer"/>
+    </element>
+</database>

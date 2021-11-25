@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>allorders</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-19 07:04:41</sys_created_on>
+        <sys_id>c9d8c4e31b77301074fcc841604bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AllOrders</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_ui_view_c9d8c4e31b77301074fcc841604bcb1f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-19 07:04:41</sys_updated_on>
+        <title>AllOrders</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

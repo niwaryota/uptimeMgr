@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="要員マスタ" max_length="40" name="x_704175_uptimemgr_x_704175_user" sizeclass="5" type="collection">
+        <element label="グレード" mandatory="true" max_length="32" name="grade" reference="x_704175_uptimemgr_x_704175_uptimemgr" type="reference"/>
+        <element label="要員名" mandatory="true" max_length="32" name="name" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="grade"/>
+        </index>
+        <index name="index2">
+            <element name="name"/>
+        </index>
+    </element>
+</database>

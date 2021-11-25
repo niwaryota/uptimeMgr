@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="グレードマスタ" max_length="40" name="x_704175_uptimemgr_x_704175_uptimemgr" sizeclass="5" type="collection">
+        <element choice="1" display="true" label="グレード" mandatory="true" max_length="40" name="grade" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="01" value="01"/>
+                <element inactive_on_update="false" label="02" value="02"/>
+                <element inactive_on_update="false" label="03" value="03"/>
+                <element inactive_on_update="false" label="04" value="04"/>
+                <element inactive_on_update="false" label="05" value="05"/>
+            </choice>
+        </element>
+        <element label="単金" mandatory="true" max_length="40" name="price" type="integer"/>
+        <element label="時間単金" max_length="40" name="unitprice" type="integer"/>
+    </element>
+</database>

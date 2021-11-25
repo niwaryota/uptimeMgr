@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_704175_uptimemgr._user" name="x_704175_uptimemgr._user">6ab4a3de1b33301074fcc841604bcb48</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-16 01:53:02</sys_created_on>
+        <sys_id>e6b4a7921b73301074fcc841604bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>6ab4a3de1b33301074fcc841604bcb48</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_embedded_help_role_e6b4a7921b73301074fcc841604bcbd0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-16 01:53:02</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

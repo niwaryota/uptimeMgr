@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>sys_created_on</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>申請情報 onload</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	
+	//ルール判断
+	if(g_user.hasRole('x_704175_uptimemgr.manager')){
+		g_form.setReadOnly('name',true);
+		g_form.setReadOnly('targetdate',true);
+		g_form.setReadOnly('workingdate',true);
+		g_form.setReadOnly('uptime',true);
+		g_form.setReadOnly('applied',true);
+	}
+	
+   //新規の場合
+	if(g_form.isNewRecord()){
+		//要員名
+		var username = new GlideAjax('Utils');
+		username.addParam('sysparm_name','getusersysid');
+		username.getXMLAnswer(function(answer){
+			if (answer.length > 0){
+				g_form.setValue('name',answer.split(',')[0],answer.split(',')[1]);
+			}
+		});
+		
+		//対象年月
+		var strtarget = new GlideAjax('Utils');
+		strtarget.addParam('sysparm_name','gettargetdate');
+		strtarget.getXMLAnswer(function(answer){
+			if (answer.length > 0){
+				g_form.setValue('targetdate',answer.split(',')[0],answer.split(',')[1]);
+			}
+		});
+		
+		//先月標準日数
+		var workdaybefore = new GlideAjax('Utils');
+		workdaybefore.addParam('sysparm_name','getworkdayFromWorkingday');
+		workdaybefore.addParam('sysparm_flag','before');
+		workdaybefore.getXMLAnswer(function(answer){
+			if (answer.length > 0){
+				g_form.setValue('workdaylast',answer);
+			}
+		});
+		
+		//当月標準日数
+		var workingday = new GlideAjax('Utils');
+		workingday.addParam('sysparm_name','getworkdayFromWorkingday');
+		workingday.addParam('sysparm_flag','now');
+		workingday.getXMLAnswer(function(answer){
+			if (answer.length > 0){
+				g_form.setValue('workday',answer);
+			}
+		});
+				
+		
+		//先月稼働日数
+		var workingdaybefore = new GlideAjax('Utils');
+		workingdaybefore.addParam('sysparm_name','getworkingdateFromAttendanc');
+		workingdaybefore.addParam('sysparm_flag','day');
+		workingdaybefore.addParam('sysparm_username',g_user.getFullName());
+		workingdaybefore.getXMLAnswer(function(answer){
+			if (answer.length > 0){
+				g_form.setValue('workingdaylast',answer);
+			}
+		});
+		
+		
+		//先月稼働時間
+		var workingtimebefore = new GlideAjax('Utils');
+		workingtimebefore.addParam('sysparm_name','getworkingdateFromAttendanc');
+		workingtimebefore.addParam('sysparm_flag','time');
+		workingtimebefore.addParam('sysparm_username',g_user.getFullName());
+		workingtimebefore.getXMLAnswer(function(answer){
+			if (answer.length > 0){
+				g_form.setValue('workingtimelast',answer);
+			}
+		});
+		
+		
+	}   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-16 04:34:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>10084cee1bb3301074fcc841604bcbd9</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>申請情報 onload</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_script_client_10084cee1bb3301074fcc841604bcbd9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-17 01:11:59</sys_updated_on>
+        <table>x_704175_uptimemgr_x_704175_requestinfo</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

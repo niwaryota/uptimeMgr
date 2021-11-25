@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="DELETE">
+        <group_id/>
+        <report_id display_value="">8bdf761b1b73301074fcc841604bcb4c</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-19 01:45:52</sys_created_on>
+        <sys_id>83df761b1b73301074fcc841604bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>8bdf761b1b73301074fcc841604bcb4c</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_report_users_groups_83df761b1b73301074fcc841604bcb4d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-19 01:45:52</sys_updated_on>
+        <user_id display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user_id>
+    </sys_report_users_groups>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</application>
+        <file_path/>
+        <instance_id>6e4130cadb00f8109a4dcac505961978</instance_id>
+        <instance_name>dev115550</instance_name>
+        <name>sys_report_users_groups_83df761b1b73301074fcc841604bcb4d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups"><sys_report_users_groups action="INSERT_OR_UPDATE"><group_id/><report_id display_value="">8bdf761b1b73301074fcc841604bcb4c</report_id><sys_class_name>sys_report_users_groups</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-11-19 01:45:52</sys_created_on><sys_id>83df761b1b73301074fcc841604bcb4d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>8bdf761b1b73301074fcc841604bcb4c</sys_name><sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package><sys_policy/><sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope><sys_update_name>sys_report_users_groups_83df761b1b73301074fcc841604bcb4d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-11-19 01:45:52</sys_updated_on><user_id display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user_id></sys_report_users_groups></record_update>]]></payload>
+        <payload_hash>1537778693</payload_hash>
+        <record_name>8bdf761b1b73301074fcc841604bcb4c</record_name>
+        <reverted_from/>
+        <source>eaa2e3de1b33301074fcc841604bcb95</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-19 01:45:52</sys_created_on>
+        <sys_id>8fdf325b1b73301074fcc841604bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d35df17650000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-19 01:45:52</sys_updated_on>
+        <type>Report Users and Groups</type>
+        <update_guid>c7df325b4d73301053fd0cfe639e2930</update_guid>
+        <update_guid_history>c7df325b4d73301053fd0cfe639e2930:1537778693</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-19 01:52:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_report_users_groups">sys_report_users_groups</sys_db_object>
+        <sys_id>23e57be2407a4bd58690f497baf44e49</sys_id>
+        <sys_metadata>83df761b1b73301074fcc841604bcb4d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>8bdf761b1b73301074fcc841604bcb4c</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_scope_delete display_value="">6c266e2f824844469a3d1046c86ce331</sys_scope_delete>
+        <sys_update_name>sys_report_users_groups_83df761b1b73301074fcc841604bcb4d</sys_update_name>
+        <sys_update_version display_value="sys_report_users_groups_83df761b1b73301074fcc841604bcb4d">8fdf325b1b73301074fcc841604bcb30</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-19 01:52:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

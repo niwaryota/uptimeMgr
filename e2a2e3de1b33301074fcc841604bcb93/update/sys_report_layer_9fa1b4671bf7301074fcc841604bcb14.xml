@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_layer">
+    <sys_report_layer action="INSERT_OR_UPDATE">
+        <aggregate>SUM</aggregate>
+        <aggregation_source>no_override</aggregation_source>
+        <allow_data_label_overlap>false</allow_data_label_overlap>
+        <bar_unstack>false</bar_unstack>
+        <color display_value="UI14 Yellow">ce56c9b3d7332100fa6c0c12ce610334</color>
+        <color_palette display_value="Greens dark to light (5)">a0f81f19d7100200b96d45a3ce61039f</color_palette>
+        <colors/>
+        <compute_percent>aggregate</compute_percent>
+        <custom_config>{"transforms":[{"transform":{"transform":"Reference","name":"chart-subjects"}}]}</custom_config>
+        <field>orderno</field>
+        <filter/>
+        <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
+        <import_table/>
+        <interval>year</interval>
+        <list_ui_view/>
+        <report display_value="集計割り当て予算">672f761b1b73301074fcc841604bcb9b</report>
+        <report_source/>
+        <sequence>2</sequence>
+        <series_name_text>予算</series_name_text>
+        <set_color>one_color</set_color>
+        <show_2nd_y_axis>false</show_2nd_y_axis>
+        <show_chart_data_label>false</show_chart_data_label>
+        <show_data_label_position_middle>false</show_data_label_position_middle>
+        <show_marker>false</show_marker>
+        <source_type>table</source_type>
+        <style_config/>
+        <sumfield>budget</sumfield>
+        <sys_class_name>sys_report_layer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-19 10:03:09</sys_created_on>
+        <sys_id>9fa1b4671bf7301074fcc841604bcb14</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>予算</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_report_layer_9fa1b4671bf7301074fcc841604bcb14</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-19 10:06:12</sys_updated_on>
+        <table>x_704175_uptimemgr_x_704175_order</table>
+        <trend_field/>
+        <type>bar</type>
+        <use_null_in_trend>false</use_null_in_trend>
+        <y_axis_from/>
+        <y_axis_title/>
+        <y_axis_to/>
+    </sys_report_layer>
+</record_update>

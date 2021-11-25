@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="hasLabels=true" label="稼働管理明細" max_length="40" name="x_704175_uptimemgr_x_704175_attendancdetail" sizeclass="3" type="collection">
+        <element label="割り当て予算" mandatory="true" max_length="40" name="assignbudget" type="integer"/>
+        <element label="利用オーダー" mandatory="true" max_length="32" name="assignorder" reference="x_704175_uptimemgr_x_704175_order" type="reference"/>
+        <element label="割り当て時間" mandatory="true" max_length="20" name="assignuptime" type="decimal"/>
+        <element label="コメント" max_length="1000" name="comment" type="string"/>
+        <element label="要員名" mandatory="true" max_length="32" name="name" reference="x_704175_uptimemgr_x_704175_user" type="reference"/>
+        <element label="対象年月" mandatory="true" max_length="32" name="targetdate" reference="x_704175_uptimemgr_x_704175_workday" type="reference"/>
+        <index name="index">
+            <element name="targetdate"/>
+        </index>
+        <index name="index2">
+            <element name="assignorder"/>
+        </index>
+        <index name="index3">
+            <element name="name"/>
+        </index>
+    </element>
+</database>

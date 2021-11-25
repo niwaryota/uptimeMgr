@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="4050dcab1b77301074fcc841604bcbc1" sys_domain="global" table="x_704175_uptimemgr_x_704175_order" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-11-19 07:37:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0450dcab1b77301074fcc841604bcbc4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_704175_uptimemgr_x_704175_order" name="x_704175_uptimemgr_x_704175_order" sys_domain="global" view="Default view">4050dcab1b77301074fcc841604bcbc1</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_704175_uptimemgr_x_704175_order" sys_domain="global" view="Default view">b7907f5e1b73301074fcc841604bcb34</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-11-19 07:37:22</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-11-19 07:37:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0050dcab1b77301074fcc841604bcbc5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_704175_uptimemgr_x_704175_order" name="x_704175_uptimemgr_x_704175_order" sys_domain="global" view="Default view">4050dcab1b77301074fcc841604bcbc1</sys_ui_form>
+            <sys_ui_section caption="参照" display_value="参照" name="x_704175_uptimemgr_x_704175_order" sys_domain="global" view="Default view">bf40dcab1b77301074fcc841604bcbbe</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-11-19 07:37:22</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_704175_uptimemgr_x_704175_order</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-11-19 07:37:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4050dcab1b77301074fcc841604bcbc1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_704175_uptimemgr_x_704175_order</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+            <sys_update_name>sys_ui_form_sections_4050dcab1b77301074fcc841604bcbc1</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-11-19 07:37:22</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

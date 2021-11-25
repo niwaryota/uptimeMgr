@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_704175_uptimemgr_x_704175_attendanc" version="2" view="Assignorder">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="稼働管理 - Assignorder" name="x_704175_uptimemgr_x_704175_attendanc" related_list="NULL" sys_domain="global" view="f5dfa1471b73301074fcc841604bcb14">28c6798b1b73301074fcc841604bcb1c</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>REL:93c53d4b1b73301074fcc841604bcb3c</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-11-18 01:48:00</sys_created_on>
+            <sys_id>a0c6798b1b73301074fcc841604bcb1e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-11-18 01:48:00</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>稼働管理 - Assignorder</calculated_name>
+            <filter/>
+            <name>x_704175_uptimemgr_x_704175_attendanc</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-11-18 01:48:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>28c6798b1b73301074fcc841604bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>稼働管理 - Assignorder</sys_name>
+            <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+            <sys_update_name>sys_ui_related_x_704175_uptimemgr_x_704175_attendanc_Assignorder</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-11-18 01:48:00</sys_updated_on>
+            <sys_user/>
+            <view display_value="Assignorder" name="Assignorder">f5dfa1471b73301074fcc841604bcb14</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

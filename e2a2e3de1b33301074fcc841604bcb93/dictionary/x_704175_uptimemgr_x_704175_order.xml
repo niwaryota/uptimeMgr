@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="オーダーマスタ" max_length="40" name="x_704175_uptimemgr_x_704175_order" sizeclass="5" type="collection">
+        <element label="予算" max_length="40" name="budget" read_only="true" type="integer"/>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="オーダー番号" max_length="20" name="orderno" read_only="true" type="string"/>
+        <element default="javascript:current.budget;" label="残予算" max_length="40" name="remainingbudget" type="integer"/>
+        <element label="合計割り当て 予算" max_length="40" name="total_budget" type="integer"/>
+    </element>
+</database>

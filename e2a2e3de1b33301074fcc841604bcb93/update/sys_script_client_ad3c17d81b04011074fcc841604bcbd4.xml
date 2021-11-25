@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>uptime</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>稼働時間入力チェック</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    g_form.clearMessages();
+
+    //当月稼働日数未入力の場合
+    if(parseInt(g_form.getIntValue('workingdate')) == 0) {
+        g_form.getControl('workingdate').focus();
+        g_form.setValue('uptime', '');
+        g_form.addErrorMessage('稼働日数を入力してください。');
+        return;
+    }
+
+    //当月稼働時間が[入力した稼働日数*24h]以下であること
+    if (parseFloat(g_form.getDecimalValue('uptime')) > parseInt(g_form.getIntValue('workingdate')) * 24) {
+
+        g_form.getControl('uptime').focus();
+        g_form.setValue('uptime', '');
+        g_form.addErrorMessage('稼働時間が当月の日数*24時間を超えています。');
+    }
+
+    ///当月稼働時間が0以下の場合   
+    if (parseInt(g_form.getDecimalValue('uptime')) < 0) {
+        g_form.getControl('uptime').focus();
+        g_form.setValue('uptime', '');
+        g_form.addErrorMessage('稼働時間は0以上を入力してください。');
+    }
+
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-22 06:28:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ad3c17d81b04011074fcc841604bcbd4</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>稼働時間入力チェック</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_script_client_ad3c17d81b04011074fcc841604bcbd4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-22 07:06:41</sys_updated_on>
+        <table>x_704175_uptimemgr_x_704175_requestinfo</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
