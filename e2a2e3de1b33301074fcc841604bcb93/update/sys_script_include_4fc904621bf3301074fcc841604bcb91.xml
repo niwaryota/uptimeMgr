@@ -36,14 +36,18 @@ Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		return result;
 	},
 	
-	//
+	//標準日数
 	getworkdayFromWorkingday: function(){
 		var rightnow = new GlideDateTime();
 		var targetdate = this.getParameter('sysparm_flag');
 		if(targetdate == 'before'){
 			rightnow.addMonthsLocalTime(-1);
 		}
-		var strtargetdate = rightnow.getYearLocalTime()+"/"+rightnow.getMonthLocalTime();
+		var strmonth =  String(rightnow.getMonthLocalTime());
+		if(strmonth.length < 2){
+			strmonth = '0'+strmonth;
+		}
+		var strtargetdate = rightnow.getYearLocalTime()+"/"+strmonth;
 		var workday_lookup = new GlideRecord('x_704175_uptimemgr_x_704175_workday');
 		workday_lookup.addQuery('targetdate','=',strtargetdate);
 		workday_lookup.query();		
@@ -54,20 +58,85 @@ Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		return result;		
 	},
 	
-	//
+	//標準日数withパラメータ
+	getworkdayFromWorkingdayWithParam: function(){
+		//前月日付取得
+		var strDate = this.getParameter('sysparm_targetdate')+'/01';
+		var rightnow = new GlideDateTime();		
+		rightnow.setDisplayValue(strDate, "yyyy/MM/dd");		
+		
+		var targetdate = this.getParameter('sysparm_flag');
+		if(targetdate == 'before'){
+			rightnow.addMonthsLocalTime(-1);
+		}
+		var strmonth =  String(rightnow.getMonthLocalTime());
+		if(strmonth.length < 2){
+			strmonth = '0'+strmonth;
+		}
+		var strtargetdate = rightnow.getYearLocalTime()+"/"+strmonth;
+		var workday_lookup = new GlideRecord('x_704175_uptimemgr_x_704175_workday');
+		workday_lookup.addQuery('targetdate','=',strtargetdate);
+		workday_lookup.query();		
+		var result = "";
+		while(workday_lookup.next()){
+			result = workday_lookup.workday;
+		}
+		return result;		
+	},
+	
+	//稼働日数
 	getworkingdateFromAttendanc: function(){
 			
 		//前月取得
 		var gdt = new GlideDateTime();
 		gdt.addMonthsLocalTime(-1);
-		var strtargetdate = gdt.getYearLocalTime()+"/"+gdt.getMonthLocalTime();
+		var strmonth =  String(gdt.getMonthLocalTime());
+		if(strmonth.length < 2){
+			strmonth = '0'+strmonth;
+		}
+		var strtargetdate = gdt.getYearLocalTime()+"/"+strmonth;
 		
 		var username = this.getParameter('sysparm_username');
 		var flag = this.getParameter('sysparm_flag');
 		//
 		var result;
 		var attendanc_lookup = new GlideRecord('x_704175_uptimemgr_x_704175_attendanc');
-		attendanc_lookup.addQuery('name.name',username);
+		attendanc_lookup.addQuery('name.name.name',username);
+		attendanc_lookup.addQuery('targetdate.targetdate',strtargetdate);
+		attendanc_lookup.query();
+		if(attendanc_lookup.next()){
+			if(flag=='day'){
+				result = attendanc_lookup.workingdate;
+			}else{
+				result = attendanc_lookup.workingtime;
+			}
+		}
+		return result;
+		
+    },
+	
+	//稼働日数withパラメータ
+	getworkingdateFromAttendancWithParam: function(){
+			
+		//前月取得
+		//前月日付取得
+		var strDate = this.getParameter('sysparm_targetdate')+'/01';
+		var gdt = new GlideDateTime();
+		gdt.setDisplayValue(strDate, "yyyy/MM/dd");			
+		gdt.addMonthsLocalTime(-1);
+		var strmonth = String(gdt.getMonthLocalTime());
+		
+		if(strmonth.length < 2){			
+			strmonth = '0'+strmonth;			
+		}
+		var strtargetdate = gdt.getYearLocalTime()+"/"+strmonth;
+		
+		var username = this.getParameter('sysparm_username');
+		var flag = this.getParameter('sysparm_flag');
+		//
+		var result;
+		var attendanc_lookup = new GlideRecord('x_704175_uptimemgr_x_704175_attendanc');
+		attendanc_lookup.addQuery('name.name.name',username);
 		attendanc_lookup.addQuery('targetdate.targetdate',strtargetdate);
 		attendanc_lookup.query();
 		if(attendanc_lookup.next()){
@@ -98,13 +167,13 @@ Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-11-16 04:38:36</sys_created_on>
         <sys_id>4fc904621bf3301074fcc841604bcb91</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>Utils</sys_name>
         <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
-        <sys_policy>read</sys_policy>
+        <sys_policy/>
         <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
         <sys_update_name>sys_script_include_4fc904621bf3301074fcc841604bcb91</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-11-22 05:56:40</sys_updated_on>
+        <sys_updated_on>2021-11-26 08:31:25</sys_updated_on>
     </sys_script_include>
 </record_update>
