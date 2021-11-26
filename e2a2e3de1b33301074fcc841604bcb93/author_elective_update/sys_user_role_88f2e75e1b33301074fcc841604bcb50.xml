@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_704175_uptimemgr.user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>x_704175_uptimemgr.user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-16 01:45:12</sys_created_on>
+        <sys_id>88f2e75e1b33301074fcc841604bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_704175_uptimemgr.user</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_user_role_88f2e75e1b33301074fcc841604bcb50</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-16 01:45:12</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</application>
+        <file_path/>
+        <instance_id>6e4130cadb00f8109a4dcac505961978</instance_id>
+        <instance_name>dev115550</instance_name>
+        <name>sys_user_role_88f2e75e1b33301074fcc841604bcb50</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_704175_uptimemgr.user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>x_704175_uptimemgr.user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-11-16 01:45:12</sys_created_on><sys_id>88f2e75e1b33301074fcc841604bcb50</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_704175_uptimemgr.user</sys_name><sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package><sys_policy/><sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope><sys_update_name>sys_user_role_88f2e75e1b33301074fcc841604bcb50</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-11-16 01:45:12</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-1232235490</payload_hash>
+        <record_name>x_704175_uptimemgr.user</record_name>
+        <reverted_from/>
+        <source>eaa2e3de1b33301074fcc841604bcb95</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-16 01:45:13</sys_created_on>
+        <sys_id>44f2ef121b73301074fcc841604bcb9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17d266b68380000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-16 01:45:13</sys_updated_on>
+        <type>Role</type>
+        <update_guid>8cf2ef1264733010ffcbb72f6a0d3399</update_guid>
+        <update_guid_history>8cf2ef1264733010ffcbb72f6a0d3399:-1232235490</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_704175_uptimemgr.user">300a8f2d1b40011074fcc841604bcb37</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-26 02:16:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>5ce1fa5ef6f14b26ae846fc09268ef29</sys_id>
+        <sys_metadata>88f2e75e1b33301074fcc841604bcb50</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_704175_uptimemgr.user</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_scope_delete display_value="">6c266e2f824844469a3d1046c86ce331</sys_scope_delete>
+        <sys_update_name>sys_user_role_88f2e75e1b33301074fcc841604bcb50</sys_update_name>
+        <sys_update_version display_value="sys_user_role_88f2e75e1b33301074fcc841604bcb50">44f2ef121b73301074fcc841604bcb9a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-26 02:16:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

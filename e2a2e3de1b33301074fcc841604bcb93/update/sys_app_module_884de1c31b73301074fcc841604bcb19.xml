@@ -13,7 +13,7 @@
         <mobile_title>Assign Order</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_704175_uptimemgr_x_704175_attendanc</name>
-        <order>102</order>
+        <order>106</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>884de1c31b73301074fcc841604bcb19</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Assign Order</sys_name>
         <sys_overrides/>
         <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
         <sys_update_name>sys_app_module_884de1c31b73301074fcc841604bcb19</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-11-18 01:41:59</sys_updated_on>
+        <sys_updated_on>2021-11-26 02:22:24</sys_updated_on>
         <timeline_page/>
         <title>Assign Order</title>
         <uncancelable>false</uncancelable>

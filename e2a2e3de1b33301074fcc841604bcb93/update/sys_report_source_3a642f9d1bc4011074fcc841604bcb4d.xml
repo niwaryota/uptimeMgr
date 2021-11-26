@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_source">
+    <sys_report_source action="INSERT_OR_UPDATE">
+        <description/>
+        <display>稼働管理order1 (Uptimemgr attendanc report)</display>
+        <filter table="x_704175_uptimemgr_attendanc_report">t2_targetdate!=1a54082e1bb3301074fcc841604bcbca<item display_table="x_704175_uptimemgr_x_704175_workday" display_value="2021/12" endquery="false" field="t2_targetdate" goto="false" newquery="false" operator="!=" or="false" value="1a54082e1bb3301074fcc841604bcbca"/>
+        </filter>
+        <name>稼働管理order1</name>
+        <sys_class_name>sys_report_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-25 09:38:01</sys_created_on>
+        <sys_id>3a642f9d1bc4011074fcc841604bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>稼働管理order1 (Uptimemgr attendanc report)</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_report_source_3a642f9d1bc4011074fcc841604bcb4d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-25 09:38:01</sys_updated_on>
+        <table>x_704175_uptimemgr_attendanc_report</table>
+    </sys_report_source>
+</record_update>

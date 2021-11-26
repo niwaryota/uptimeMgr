@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>exp_d0003a75d1bc4011074fcc841604bcbec</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-11-25 09:27:15</sys_created_on>
+        <sys_id>4003a75d1bc4011074fcc841604bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Exp_d0003a75d1bc4011074fcc841604bcbec</sys_name>
+        <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
+        <sys_update_name>sys_ui_view_4003a75d1bc4011074fcc841604bcbee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-11-25 09:27:15</sys_updated_on>
+        <title>Exp_d0003a75d1bc4011074fcc841604bcbec</title>
+        <user/>
+    </sys_ui_view>
+</record_update>
