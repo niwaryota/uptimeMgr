@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <application display_value="稼働時間管理_モブ">50a4882e1bb3301074fcc841604bcbc6</application>
         <assessment/>
         <device_type/>
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a4de271e1b73301074fcc841604bcb57</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>稼働管理明細</sys_name>
         <sys_overrides/>
         <sys_package display_value="稼働時間管理" source="x_704175_uptimemgr">e2a2e3de1b33301074fcc841604bcb93</sys_package>
@@ -32,7 +32,7 @@
         <sys_scope display_value="稼働時間管理">e2a2e3de1b33301074fcc841604bcb93</sys_scope>
         <sys_update_name>sys_app_module_a4de271e1b73301074fcc841604bcb57</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-11-19 00:22:53</sys_updated_on>
+        <sys_updated_on>2021-11-26 02:54:51</sys_updated_on>
         <timeline_page/>
         <title>稼働管理明細</title>
         <uncancelable>false</uncancelable>
